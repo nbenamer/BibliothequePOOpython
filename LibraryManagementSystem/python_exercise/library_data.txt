@@ -1,0 +1,7 @@
+1984,George Orwell,True
+1984,George Orwell,True
+Brave New World,Aldous Huxley,True
+Brave New World,Aldous Huxley,True
+Animal Farm,George Orwell,True
+Animal Farm,George Orwell,False
+Nail,Benamer,True

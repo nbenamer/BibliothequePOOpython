@@ -1,0 +1,31 @@
+How did OOP principles (e.g., encapsulation) help structure this program?
+Les principes de la POO, comme l'encapsulation, ont permis de structurer le programme en séparant les classes distinctes (Livre, Bibliothèque, Étudiant). 
+Cela a rendu le code plus organisé et facile à lire et donc a evoluer.
+
+What challenges did you encounter ?
+Il fallait faire une verification de l'avaibility a chaque borrow et list of book  a partir d'un dataset dynamique et bien verifier le format en 3 argument 
+Title author avaibility pour chaque methode qui requiere le dataset 
+
+How would you modify this system to track overdue books or fines?
+
+De la meme maniere que la borrowlimit avec un counter on set une date + 15 jour au moment du borrow
+et a partir du moment l'etudiant return on fait date actuel du return - date + 15 du borrow = Jour de retard
+Fines = Value fixe = 2$
+Fines_De_Retard = Jour de retard x Fines 
+On set un boolen hasfine dans student if Fines_De_Retard > 0 
+if student has fines  ==  True
+On rajoute une condition au moment du return 
+If HasFines == true
+print (" vous ne pouvez pas rendre sans payer de fines" )
+Syteme de paiment qui set hasfine sur false
+
+How do foreign keys enforce relationships between tables, and how did they impact your design?
+ Les clés étrangères garantissent 
+ l'intégrité référentielle entre les tables en assurant que les valeurs d'une colonne correspondent à celles d'une autre table.
+
+What considerations must be made when implementing constraints like course capacity?
+Je n'ai pas fait les constraints
+
+How could you optimize queries for large datasets with thousands of students and enrollments?
+Indexation.
+Plus la bdd est grande plus une indexation inteliggente sur les requetes souvent faites permettent d'optimiser les queries 
